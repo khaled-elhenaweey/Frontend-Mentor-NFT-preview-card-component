@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  background-color: #0d192b;
+  color: #8bacda;
+  padding-bottom: 12px;
+}
+
+.attribution a {
+  color: white;
+  font-weight: 700;
+}
+
+.nft-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d192b;
+  height: 97vh;
+}
+
+.nft-component .card {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #14253d;
+  font-size: 16px;
+}
+
+.nft-component .card .img-container {
+  position: relative;
+}
+
+.nft-component .card .img-container .card-img {
+  width: 300px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 376px) {
+  .nft-component .card .img-container .card-img {
+    width: 260px;
+  }
+}
+
+.nft-component .card .img-container .overlay-background {
+  background-color: rgba(0, 255, 247, 0.45);
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.nft-component .card .img-container .overlay-background:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nft-component .card .card-body {
+  text-align: left;
+  padding: 10px;
+}
+
+.nft-component .card .card-body .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.nft-component .card .card-body .card-title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.nft-component .card .card-body .card-info {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8bacda;
+}
+
+.nft-component .card .card-body .card-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-component .card .card-body .card-data .price,
+.nft-component .card .card-body .card-data .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-component .card .card-body .card-data .price img,
+.nft-component .card .card-body .card-data .time img {
+  margin-right: 10px;
+}
+
+.nft-component .card .card-body .card-data .price span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00fff7;
+}
+
+.nft-component .card .card-body .card-data .time span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8bacda;
+}
+
+.nft-component .card .card-body .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-component .card .card-body .profile .profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 16px;
+}
+
+.nft-component .card .card-body .profile .profile-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8bacda;
+}
+
+.nft-component .card .card-body .profile .profile-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.nft-component .card .card-body .profile .profile-info a:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.nft-component .card .card-body .divider {
+  width: 100%;
+  margin: 20px 0;
+  border-top: 1px solid #2f415b;
+}
+/*# sourceMappingURL=style.css.map */

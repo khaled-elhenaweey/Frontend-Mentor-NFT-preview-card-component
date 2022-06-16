@@ -1,0 +1,173 @@
+// style variables
+$main-blue: hsl(217, 54%, 11%);
+$card-blue: hsl(216, 50%, 16%);
+$line-blue: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+// file data 
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  background-color: $main-blue;
+  color: $soft-blue;
+  padding-bottom: 12px;
+
+  a {
+    color: $white;
+    font-weight: 700;
+  }
+}
+
+// challenge section
+.nft-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-blue;
+  height: 97vh;
+
+  .card {
+    width: min-content;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: $card-blue;
+    font-size: 16px;
+
+    .img-container {
+      position: relative;
+
+      .card-img {
+        width: 300px;
+        border-radius: 16px;
+
+        @media screen and (max-width: 376px) {
+          width: 260px;
+        }
+      }
+
+      .overlay-background {
+        background-color: rgba($color: $cyan, $alpha: 0.45);
+        height: 100%;
+        width: 100%;
+        border-radius: 16px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s ease;
+
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+    .card-body {
+      text-align: left;
+      padding: 10px;
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $white;
+
+        &:hover {
+          color: $cyan;
+          cursor: pointer;
+        }
+      }
+
+      .card-info {
+        font-size: 18px;
+        font-weight: 300;
+        color: $soft-blue;
+      }
+
+      .card-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price,
+        .time {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        .price {
+          span {
+            font-size: 16px;
+            font-weight: 600;
+            color: $cyan;
+          }
+        }
+
+        .time {
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            color: $soft-blue;
+          }
+        }
+      }
+
+      .profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        .profile-img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 1px solid $white;
+          margin-right: 16px;
+        }
+
+        .profile-info {
+          font-size: 16px;
+          font-weight: 400;
+          color: $soft-blue;
+
+          a {
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+              color: $cyan;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .divider {
+        width: 100%;
+        margin: 20px 0;
+        border-top: 1px solid $line-blue;
+
+      }
+    }
+  }
+}
